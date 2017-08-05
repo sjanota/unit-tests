@@ -8,8 +8,8 @@
 
    1. zwraca prawdę jeżeli litera jest w słowie
    2. zwraca fałsz jeżeli litery nie ma w słowie
-   3. ingoruje wielkość liter, znaczy jeżeli słowo zawiera 'A' to zawiera również 'a'
-   4. punkt 3 odwrotnie: jeżeli zawiera 'a' to zawiera również 'A'
+   3. ingoruje wielkość liter, znaczy jeżeli słowo zawiera 'B' to zawiera również 'b'
+   4. punkt 3 odwrotnie: jeżeli zawiera 'b' to zawiera również 'B'
 
 
 ### TDD
