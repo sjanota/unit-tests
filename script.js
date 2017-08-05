@@ -1,7 +1,11 @@
 function findLetterInWord(letter, word) {
-
-    return true;
-}
+    for (var i=0; i < word.length; i++) {
+        if(letter === word[i]) {
+            return true;
+        }
+    };
+    return false;
+};
 
 function test_shouldReturnTrueIfLetterInWord() {
     var letter = "o";
@@ -13,7 +17,7 @@ function test_shouldReturnTrueIfLetterInWord() {
     } else {
         console.log("Result:", result, "Expeted:", expected);
     }
-}
+};
 
 function test_shouldReturnFalseIfLetterNotInWord() {
     var letter = "b";
@@ -25,7 +29,7 @@ function test_shouldReturnFalseIfLetterNotInWord() {
     } else {
         console.log("Result:", result, "Expeted:", expected);
     }
-}
+};
 
 function runTests() {
     for(k in window) {
