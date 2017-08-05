@@ -1,4 +1,6 @@
 function findLetterInWord(letter, word) {
+    letter = letter.toLowerCase();
+    word = word.toLowerCase();
     for (var i=0; i < word.length; i++) {
         if(letter === word[i]) {
             return true;
