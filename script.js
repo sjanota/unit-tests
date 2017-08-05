@@ -31,6 +31,30 @@ function test_shouldReturnFalseIfLetterNotInWord() {
     }
 };
 
+function test_bigLetterIsTheSameAsSmallLetter() {
+    var letter = "R";
+    var word = "Karolina";
+    var expected = true;
+    var result = findLetterInWord(letter, word);
+    if (result === expected) {
+        console.log("OK");
+    } else {
+        console.log("Result:", result, "Expeted:", expected);
+    }
+};
+
+function test_smallLetterIsTheSameAsBigLetter() {
+    var letter = "k";
+    var word = "Karolina";
+    var expected = true;
+    var result = findLetterInWord(letter, word);
+    if (result === expected) {
+        console.log("OK");
+    } else {
+        console.log("Result:", result, "Expeted:", expected);
+    }
+};
+
 function runTests() {
     for(k in window) {
         if (k.startsWith("test_")) {
